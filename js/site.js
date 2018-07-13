@@ -94,7 +94,7 @@ $(document).ready(function() {
 		var code = document.querySelector('.code');
 		var worker = new Worker('worker.js');
 		worker.onmessage = function (event) {
-			code.innerHTML = event.data;
+			code[0].innerHTML = event.data;
 		};
 		worker.postMessage(code.textContent);
 	});

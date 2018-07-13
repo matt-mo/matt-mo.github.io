@@ -91,7 +91,7 @@ $(document).ready(function() {
 
 	init();
 	addEventListener('load', function () {
-		var code = document.querySelector('#code');
+		var code = document.querySelector('.code');
 		var worker = new Worker('worker.js');
 		worker.onmessage = function (event) {
 			code.innerHTML = event.data;

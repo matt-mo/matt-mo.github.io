@@ -90,12 +90,15 @@ $(document).ready(function() {
 
 
 	init();
-	addEventListener('load', function () {
-		var code = document.querySelector('.code-example-body');
-		var worker = new Worker('worker.js');
+	$('pre code').each(function (i, block) {
+		var code = $(block).text(),
+			worker = new Worker('js/worker.js');
+
 		worker.onmessage = function (event) {
-			code.innerHTML = event.data;
+			var result = event.data;
+			$(block).addClass('language-' + result.language).html(result.value);
+			worker.terminate();
 		};
-		worker.postMessage(code.textContent);
+		worker.postMessage(code);
 	});
 });

@@ -51,7 +51,9 @@
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    width: 80%; }
+    width: 60%; 
+    margin-left: 30%;
+  }
   .column,
   .columns {
     margin-left: 4%; }
@@ -401,7 +403,7 @@ there.
 
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) {}  
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {}

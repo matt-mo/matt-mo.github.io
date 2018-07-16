@@ -44,7 +44,6 @@
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
-    max-width: 800px;
     width: 85%;
     padding: 0; }
 }
@@ -52,9 +51,7 @@
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    max-width: 60%;
-    margin-left: 30%;
-  }
+    width: 80%; }
   .column,
   .columns {
     margin-left: 4%; }
@@ -62,8 +59,6 @@
   .columns:first-child {
     margin-left: 0; }
 
-
-  }
   .one.column,
   .one.columns                    { width: 4.66666666667%; }
   .two.columns                    { width: 13.3333333333%; }

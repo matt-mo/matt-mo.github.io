@@ -1,5 +1,5 @@
 /* PrismJS 1.15.0
-https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+c+csharp+basic+cpp+ruby+django+markup-templating+handlebars+http+hpkp+hsts+java+json+less+objectivec+perl+php+sql+python+r+jsx+typescript+sass+scss+swift+vbnet+visual-basic&plugins=line-numbers+keep-markup */
+https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+c+csharp+basic+cpp+ruby+django+markup-templating+handlebars+http+hpkp+hsts+java+json+less+objectivec+perl+php+sql+python+r+jsx+typescript+sass+scss+swift+vbnet+visual-basic&plugins=line-numbers+unescaped-markup */
 
 /**
  * okaidia theme for JavaScript, CSS and HTML
@@ -164,4 +164,16 @@ pre[class*="language-"].line-numbers>code {
     display: block;
     padding-right: 0.8em;
     text-align: right;
+}
+
+/* Fallback, in case JS does not run, to ensure the code is at least visible */
+
+[class*='lang-'] script[type='text/plain'],
+[class*='language-'] script[type='text/plain'],
+script[type='text/plain'][class*='lang-'],
+script[type='text/plain'][class*='language-'] {
+    display: block;
+    font: 100% Consolas, Monaco, monospace;
+    white-space: pre;
+    overflow: auto;
 }

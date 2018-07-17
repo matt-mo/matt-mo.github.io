@@ -90,15 +90,4 @@ $(document).ready(function() {
 
 
 	init();
-	$('code').each(function (i, block) {
-		var code = $(block).text(),
-			worker = new Worker('js/worker.js');
-
-		worker.onmessage = function (event) {
-			var result = event.data;
-			$(block).addClass('language-' + result.language).html(result.value);
-			worker.terminate();
-		};
-		worker.postMessage(code);
-	});
 });

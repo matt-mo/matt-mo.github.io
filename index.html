@@ -27,8 +27,8 @@
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="js/highlight.pack.js"></script>
-  <link href='highlight/styles/monokai-sublime.css' rel='stylesheet'>
+  <script src="js/prism.js"></script>
+  <link href='css/prism.css' rel='stylesheet'>
   <script src="js/site.js"></script>
 
   <!-- Favicon
@@ -219,7 +219,7 @@
 
       <!-- CODE EXAMPLE ———————————————————————————————————————— -->
       <pre>
-<code><!-- .container is main centered wrapper -->
+<code class="language-html"><!-- .container is main centered wrapper -->
 <div class="container">
 
   <!-- columns should be the immediate child of a .row -->
@@ -258,13 +258,13 @@
     <div class="docs-section" id="typography">
       <h6 class="docs-header">Typography</h6>
       <p>Type is all set with the
-        <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single
-        <code>&lt;html&gt;</code> font-size property. Out of the box, Skeleton never changes the
-        <code>&lt;html&gt;</code> font-size, but it's there in case you need it for your project. All measurements are still base
+        <code class="language-markup">rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single
+        <code class="language-markup">&lt;html&gt;</code> font-size property. Out of the box, Skeleton never changes the
+        <code class="language-markup">&lt;html&gt;</code> font-size, but it's there in case you need it for your project. All measurements are still base
         10 though so, an
-        <code>&lt;h1&gt;</code> with
-        <code>5.0rem</code>font-size just means
-        <code>50px</code>.</p>
+        <code class="language-markup">&lt;h1&gt;</code> with
+        <code class="language-markup">5.0rem</code>font-size just means
+        <code class="language-markup">50px</code>.</p>
       <div class="docs-example">
         <div class="row">
           <div class="six columns">
@@ -278,34 +278,34 @@
                 <u>underline</u> are all obviously included.</p>
             <p>
               <strong>Headings</strong> create a family of distinct sizes each with specific
-              <code>letter-spacing</code>,
-              <code>line-height</code>, and
-              <code>margins</code>.</p>
+              <code class="language-markup">letter-spacing</code>,
+              <code class="language-markup">line-height</code>, and
+              <code class="language-markup">margins</code>.</p>
           </div>
           <div class="six columns">
             <h1>Heading
               <span class="heading-font-size">
-                <code>&lt;h1&gt;</code> 50rem</span>
+                <code class="language-markup">&lt;h1&gt;</code> 50rem</span>
             </h1>
             <h2>Heading
               <span class="heading-font-size">
-                <code>&lt;h2&gt;</code> 42rem</span>
+                <code class="language-markup">&lt;h2&gt;</code> 42rem</span>
             </h2>
             <h3>Heading
               <span class="heading-font-size">
-                <code>&lt;h3&gt;</code> 36rem</span>
+                <code class="language-markup">&lt;h3&gt;</code> 36rem</span>
             </h3>
             <h4>Heading
               <span class="heading-font-size">
-                <code>&lt;h4&gt;</code> 30rem</span>
+                <code class="language-markup">&lt;h4&gt;</code> 30rem</span>
             </h4>
             <h5>Heading
               <span class="heading-font-size">
-                <code>&lt;h5&gt;</code> 24rem</span>
+                <cod class="language-markup">&lt;h5&gt;</code> 24rem</span>
             </h5>
             <h6>Heading
               <span class="heading-font-size">
-                <code>&lt;h6&gt;</code> 15rem</span>
+                <code class="language-markup">&lt;h6&gt;</code> 15rem</span>
             </h6>
           </div>
         </div>
@@ -314,7 +314,7 @@
 
       <!-- CODE EXAMPLE ———————————————————————————————————————— -->
       <pre>
-<code><!-- Standard Headings -->
+<code class="language-html"><!-- Standard Headings -->
 <h1>Heading</h1>
 <h2>Heading</h2>
 <h3>Heading</h3>
@@ -341,10 +341,10 @@
     <div class="docs-section" id="buttons">
       <h6 class="docs-header">Buttons</h6>
       <p>Buttons come in two basic flavors in Skeleton. The standard
-        <code>&lt;button&gt;</code> element is plain, whereas the
-        <code>.button-primary</code> button is vibrant and prominent. Button styles are applied to a number of appropriate form
+        <code class="language-markup">&lt;button&gt;</code> element is plain, whereas the
+        <code class="language-markup">.button-primary</code> button is vibrant and prominent. Button styles are applied to a number of appropriate form
         elements, but can also be arbitrarily attached to anchors with a
-        <code>.button</code> class.</p>
+        <code class="language-markup">.button</code> class.</p>
       <div class="docs-example">
         <div>
           <a class="button" href="#">Anchor button</a>
@@ -363,7 +363,7 @@
 
       <!-- CODE EXAMPLE ———————————————————————————————————————— -->
       <pre>
-<code><!-- Standard buttons -->
+<code class="language-html"><!-- Standard buttons -->
 <a class="button" href="#">Anchor button</a>
 <button>Button element</button>
 <input type="submit" value="submit input">
@@ -415,7 +415,7 @@
 
       <!-- CODE EXAMPLE ———————————————————————————————————————— -->
       <pre>
-<code><!-- The above form looks like this -->
+<code class="language-html"><!-- The above form looks like this -->
 <form>
   <div class="row">
     <div class="six columns">
@@ -485,7 +485,7 @@
 
       <!-- CODE EXAMPLE ———————————————————————————————————————— -->
       <pre>
-<code><ul>
+<code class="language-html"><ul>
   <li>Item 1</li>
   <li>
     Item 2
@@ -509,12 +509,12 @@
     <div class="docs-section" id="code">
       <h6 class="docs-header">Code</h6>
       <p>Code styling is kept basic – just wrap anything in a
-        <code>&lt;code&gt;</code> and it will appear like
-        <code>this</code>. For blocks of code, wrap a
-        <code>&lt;code&gt;</code> with a
-        <code>&lt;pre&gt;</code>.</p>
+        <code class="language-markup">&lt;code&gt;</code> and it will appear like
+        <code class="language-markup">this</code>. For blocks of code, wrap a
+        <code class="language-markup">&lt;code&gt;</code> with a
+        <code class="language-markup">&lt;pre&gt;</code>.</p>
       <div class="docs-example">
-        <pre><code>.some-class {
+        <pre><code class="language-css">.some-class {
   background-color: red;
 }</code></pre>
       </div>
@@ -522,7 +522,7 @@
 
       <!-- CODE EXAMPLE ———————————————————————————————————————— -->
       <pre>
-<code><pre><code>.some-class {
+<code class="language-markup"><pre><code>.some-class {
   background-color: red;
 }</code></pre>
 
@@ -538,9 +538,9 @@
     <div class="docs-section" id="tables">
       <h6 class="docs-header">Tables</h6>
       <p>Be sure to use properly formed table markup with
-        <code>&lt;thead&gt;</code> and
-        <code>&lt;tbody&gt;</code> when building a
-        <code>table</code>.</p>
+        <code class="language-markup">&lt;thead&gt;</code> and
+        <code class="language-markup">&lt;tbody&gt;</code> when building a
+        <code class="language-markup">table</code>.</p>
       <div class="docs-example">
         <table class="u-full-width">
           <thead>
@@ -571,7 +571,7 @@
 
       <!-- CODE EXAMPLE ———————————————————————————————————————— -->
       <pre>
-<code><table class="u-full-width">
+<code class="language-html"><table class="u-full-width">
   <thead>
     <tr>
       <th>Name</th>
@@ -607,7 +607,7 @@
       <h6 class="docs-header">Media queries</h6>
       <p>Skeleton uses media queries to serve its scalable grid, but also has a list of queries for convenience of styling your
         site across devices. The queries are mobile-first, meaning they target
-        <code>min-width</code>. Mobile-first queries are how Skeleton's grid is built and is the preferrable method of organizing
+        <code class="language-markup">min-width</code>. Mobile-first queries are how Skeleton's grid is built and is the preferrable method of organizing
         CSS. It means all styles outside of a query apply to all devices, then larger devices are targeted for enhancement.
         This prevents small devices from having to parse tons of unused CSS. The sizes for the queries are:</p>
       <div class="docs-example row">
@@ -634,7 +634,7 @@
 
       <!-- CODE EXAMPLE ———————————————————————————————————————— -->
       <pre>
-<code>/* Mobile first queries */
+<code class="language-css">/* Mobile first queries */
 
 /* Larger than mobile */
 @media (min-width: 400px) {}
@@ -669,7 +669,7 @@
 
       <!-- CODE EXAMPLE ———————————————————————————————————————— -->
       <pre>
-<code>/* Utility Classes */
+<code class="language-css">/* Utility Classes */
 
 /* Make element full width */
 .u-full-width {

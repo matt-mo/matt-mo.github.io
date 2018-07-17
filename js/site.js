@@ -90,7 +90,7 @@ $(document).ready(function() {
 
 
 	init();
-	$('pre code').each(function (i, block) {
+	$('code').each(function (i, block) {
 		var code = $(block).text(),
 			worker = new Worker('js/worker.js');
 

@@ -218,17 +218,17 @@ hr {
  * Contain overflow in all browsers.
  */
 
-pre {
+/* pre {
   overflow: auto;
-}
+} */
 
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
 
-code,
+// code,
 kbd,
-pre,
+// pre,
 samp {
   font-family: monospace, monospace;
   font-size: 1em;

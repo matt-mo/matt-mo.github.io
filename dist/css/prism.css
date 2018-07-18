@@ -55,12 +55,14 @@ code[class*="language-"] ::selection {
 
 pre[class*="language-"] {
     padding: 1em;
-    margin: .5em 0;
+    border-style:inset outset outset inset;
+    border-width: 1px;
+    border-radius: .15em;
+    margin: 3% 0;
     overflow: auto;
-    box-shadow: 9px 8px 5px 0px rgba(0,0,0,0.6);
-    -webkit-box-shadow: 9px 8px 5px 0px rgba(0,0,0,0.6);
-    -moz-box-shadow: 9px 8px 5px 0px rgba(0,0,0,0.6);
-}
+    box-shadow: 4px 6px 6px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 4px 6px 6px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 4px 6px 6px 0px rgba(0,0,0,0.5);
 
 :not(pre)>code[class*="language-"],
 pre[class*="language-"] {

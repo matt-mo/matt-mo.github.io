@@ -622,7 +622,7 @@
 			<!-- ————————————————————————————————————————————————————— -->
 			<strong>Hit the toggle to switch between dark and light code highlight themes</strong>
 			<label class="switch u-pull-right">
-				<input type="checkbox">
+				<input id="t_heme_og" type="checkbox">
 				<span class="slider round"></span>
 			</label>
 			<!-- Use with these toggle commands
@@ -633,5 +633,16 @@
 	<!-- End Document
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
-
+<footer>
+	<script>
+		window.onload = function () {
+			let toggleTheme = function(event) {
+				if ($("#h_theme").attr('href') == 'dist/css/prism.css') {
+					$("#h_theme").attr('href', 'dist/css/themes/prism-tomorrow.css');
+				} else $("#h_theme").attr('href', 'dist/css/prism.css');
+			}
+			document.querySelectorAll('#t_heme_og')[0].addEventListener('click', toggleTheme, false);
+		};
+	</script>
+</footer>
 </html>

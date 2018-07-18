@@ -28,12 +28,12 @@
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.container {
+.container{
   position: relative;
   max-width: 1152px;
   margin: 0 auto;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 10px;
   box-sizing: border-box; }
 .column,
 .columns {

@@ -138,7 +138,7 @@
             <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.getskeleton.com" data-text="Skeleton - A dead simple, responsive boilerplate."
               data-via="dhg" data-related="dhg">Tweet</a>
             <script>
-              ! function (d, s, id) {
+              !function (d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0],
                   p = /^http:/.test(d.location) ? 'http' : 'https';
                 if (!d.getElementById(id)) {
@@ -474,17 +474,19 @@
           <code class="language-markup">&lt;code&gt;</code> with a
           <code class="language-markup">&lt;pre&gt;</code>.</p>
         <div class="docs-example">
-          <pre><code class="language-css">.some-class {
-    background-color: red;
-  }</code></pre>
+          <pre><code class="language-css">
+            .some-class {
+              background-color: red;
+            }
+            </code></pre>
         </div>
         <!-- CODE EXAMPLE ———————————————————————————————————————— -->
         <script type="text/plain" class="language-markup">
           <pre><code class="language-css">
-          .some-class {
-            background-color: red;
-          }
-        </code></pre>
+            .some-class {
+              background-color: red;
+            }
+          </code></pre>
 
           <!-- Remember every whitespace and break will be preserved in a <pre>, including indentation in your code -->
         </script>
@@ -581,25 +583,22 @@
           </div>
         </div>
         <!-- CODE EXAMPLE ———————————————————————————————————————— -->
-        <pre>
-  <code class="language-css">/* Mobile first queries */
+        <pre><code class="language-css">/* Mobile first queries */
+            /* Larger than mobile */
+            @media (min-width: 400px) {}
 
-  /* Larger than mobile */
-  @media (min-width: 400px) {}
+            /* Larger than phablet */
+            @media (min-width: 550px) {}
 
-  /* Larger than phablet */
-  @media (min-width: 550px) {}
+            /* Larger than tablet */
+            @media (min-width: 750px) {}
 
-  /* Larger than tablet */
-  @media (min-width: 750px) {}
+            /* Larger than desktop */
+            @media (min-width: 1000px) {}
 
-  /* Larger than desktop */
-  @media (min-width: 1000px) {}
-
-  /* Larger than Desktop HD */
-  @media (min-width: 1200px) {}
-  </code>
-  </pre>
+            /* Larger than Desktop HD */
+            @media (min-width: 1200px) {}
+          </code></pre>
         <!-- ————————————————————————————————————————————————————— -->
       </div>
       <!-- Utilities and Misc. -->
@@ -608,81 +607,32 @@
         <p>Skeleton has a number of small utility classes that act as easy-to-use helpers. Sometimes it's better to use a utility
           class than create a whole new class just to float an element.</p>
         <!-- CODE EXAMPLE ———————————————————————————————————————— -->
-        <pre>
-  <code class="language-css">/* Utility Classes */
-  /* Make element full width */
-  .u-full-width {
-    width: 100%;
-    box-sizing: border-box; }
+        <pre><code class="language-css">/* Utility Classes */
+          /* Make element full width */
+          .u-full-width {
+            width: 100%;
+            box-sizing: border-box; }
 
-  /* Make sure elements don't run outside containers (great for images in columns) */
-  .u-max-full-width {
-    max-width: 100%;
-    box-sizing: border-box; }
+          /* Make sure elements don't run outside containers (great for images in columns) */
+          .u-max-full-width {
+            max-width: 100%;
+            box-sizing: border-box; }
 
-  /* Float either direction */
-  .u-pull-right {
-    float: right; }
-  .u-pull-left {
-    float: left; }
+          /* Float either direction */
+          .u-pull-right {
+            float: right; }
+          .u-pull-left {
+            float: left; }
 
-  /* Clear a float */
-  .u-cf {
-    content: "";
-    display: table;
-    clear: both; }
-  </code>
-  </pre>
+          /* Clear a float */
+          .u-cf {
+            content: "";
+            display: table;
+            clear: both; }
+          </code></pre>
         <!-- ————————————————————————————————————————————————————— -->
       </div>
-      <!-- Examples -->
-      <div class="docs-section examples" id="examples">
-        <h6 class="docs-header">Examples</h6>
-        <div class="row example">
-          <a class="example-screenshot-wrapper" target="_blank" href="examples/landing">
-            <img class="example-screenshot" src="images/examples/landing.jpg">
-          </a>
-          <div class="one-half offset-by-one-half column">
-            <h6 class="example-header">Demo Landing Page</h6>
-            <p class="example-description">This template is an example of how easy it can be to create a landing page with just the Skeleton grid and a few
-              custom styles. The entire demo is ~150 lines of CSS including comments (most of which is positioning the phones
-              at the top).</p>
-            <a class="button" href="examples/landing" target="_blank">Demo</a>
-            <a class="button" href="https://github.com/dhg/Skeleton/tree/gh-pages/examples/landing" target="_blank">Source</a>
-          </div>
-        </div>
-        <div class="row example">
-          <div class="example-screenshot-wrapper">
-            <div class="example-screenshot coming-soon"></div>
-          </div>
-          <div class="one-half offset-by-one-half column">
-            <h6 class="example-header">More Coming Soon!</h6>
-            <p class="example-description">More examples will be added to help anyone get started or more familiar with how Skeleton works. The goal is education.
-              If you're more interested in real, live examples of Skeleton sites, I'll be creating a "Built on Skeleton" list
-              soon!
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
-    <!-- Google Analytics -->
-    <!--   <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-33397759-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function () {
-      var ga = document.createElement('script');
-      ga.type = 'text/javascript';
-      ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
-        '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script> -->
-
     <!-- End Document
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   </body>

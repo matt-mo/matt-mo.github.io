@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	// Variables
-	var $codeSnippets = $('.code-example-body'),
+	var $codeSnippets = $('.code-body'),
 		$nav = $('.navbar'),
 		$body = $('body'),
 		$window = $(window),

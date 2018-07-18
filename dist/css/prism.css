@@ -58,7 +58,7 @@ pre[class*="language-"] {
     border-style:inset outset outset inset;
     border-width: 1px;
     border-radius: .15em;
-    margin: 3% 0;
+    margin: 1% 0;
     overflow: auto;
     box-shadow: 4px 6px 6px 0px rgba(0,0,0,0.5);
     -webkit-box-shadow: 4px 6px 6px 0px rgba(0,0,0,0.5);

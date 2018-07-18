@@ -62,7 +62,8 @@ pre[class*="language-"] {
     overflow: auto;
     box-shadow: 4px 6px 6px 0px rgba(0,0,0,0.5);
     -webkit-box-shadow: 4px 6px 6px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 4px 6px 6px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 4px 6px 6px 0px rgba(0,0,0,0.5); 
+}
 
 :not(pre)>code[class*="language-"],
 pre[class*="language-"] {

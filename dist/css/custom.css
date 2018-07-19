@@ -1,3 +1,6 @@
+video {
+	object-position: left bottom;
+}
 /* Custom Slider Glow Toggle */
 .switch {
 	position: relative;

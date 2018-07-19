@@ -62,6 +62,7 @@ video {
 	/* 1 */
 	vertical-align: baseline;
 	/* 2 */
+	object-position: right;
 }
 
 /**

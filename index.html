@@ -642,16 +642,6 @@
 </body>
 <footer>
 	<script>
-		$(window).scroll(function() {
-				$('video').each(function() {
-					if ($(this).visible(true)) {
-						$(this)[0].play();
-					} else {
-						$(this)[0].pause();
-					}
-				})
-			});
-
 		window.onload = function () {
 			let toggleTheme = function(event) {
 				if ($("#h_theme").attr('href') == 'dist/css/themes/prism.css') {
@@ -660,6 +650,15 @@
 			}
 			document.querySelectorAll('#t_heme_og')[0].addEventListener('click', toggleTheme, false);
 		};
+		$(window).scroll(function() {
+			$('video').each(function() {
+				if ($(this).visible(true)) {
+					$(this)[0].play();
+				} else {
+					$(this)[0].pause();
+				}
+			})
+		});
 	</script>
 </footer>
 </html>

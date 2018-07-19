@@ -646,6 +646,14 @@
 <footer>
 	<script>
 		window.onload = function () {
+			
+			$('video').each(function(){ 
+				if ($(this).is(":in-viewport")) { 
+					$(this)[0].play(); 
+				} else { 
+					$(this)[0].pause();} 
+			});
+
 			let toggleTheme = function(event) {
 				if ($("#h_theme").attr('href') == 'dist/css/prism.css') {
 					$("#h_theme").attr('href', 'dist/css/themes/prism-tomorrow.css');

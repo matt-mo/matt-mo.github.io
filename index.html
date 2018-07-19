@@ -6,7 +6,7 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<meta charset="utf-8">
 	<title>JuMend CDN</title>
-	<meta name="description" content="Justuno Research Network">
+	<meta name="description" content="Ju Research Network">
 	<meta name="author" content="MattMo">
 
 	<!-- Mobile Specific Metas
@@ -15,7 +15,7 @@
 
 	<!-- HIGHLIGHT AND FONT
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link href="dist/css/prism.css" rel="stylesheet" id="h_theme">
+	<link href="dist/css/themes/prism.css" rel="stylesheet" id="h_theme">
 	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
 	<!-- CSS
@@ -635,9 +635,6 @@
 				<input id="t_heme_og" type="checkbox">
 				<span class="slider round"></span>
 			</label>
-			<!-- Use with these toggle commands
-				$("#h_theme").attr('href', 'dist/css/themes/prism-tomorrow.css')
-				$("#h_theme").attr('href', 'dist/css/prism.css')	-->
 		</div>
 	</div>
 	<!-- End Document
@@ -646,7 +643,7 @@
 <footer>
 	<script>
 		window.onload = function () {
-			
+
 			$('video').each(function(){ 
 				if ($(this).is(":in-viewport")) { 
 					$(this)[0].play(); 
@@ -655,9 +652,9 @@
 			});
 
 			let toggleTheme = function(event) {
-				if ($("#h_theme").attr('href') == 'dist/css/prism.css') {
+				if ($("#h_theme").attr('href') == 'dist/css/themes/prism.css') {
 					$("#h_theme").attr('href', 'dist/css/themes/prism-tomorrow.css');
-				} else $("#h_theme").attr('href', 'dist/css/prism.css');
+				} else $("#h_theme").attr('href', 'dist/css/themes/prism.css');
 			}
 			document.querySelectorAll('#t_heme_og')[0].addEventListener('click', toggleTheme, false);
 		};

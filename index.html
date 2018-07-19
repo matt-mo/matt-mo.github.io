@@ -642,15 +642,17 @@
 </body>
 <footer>
 	<script>
-		window.onload = function () {
-
-			$('video').each(function(){ 
-				if ($(this).is(":in-viewport")) { 
-					$(this)[0].play(); 
-				} else { 
-					$(this)[0].pause();} 
+		$(window).scroll(function() {
+				$('video').each(function() {
+					if ($(this).visible(true)) {
+						$(this)[0].play();
+					} else {
+						$(this)[0].pause();
+					}
+				})
 			});
 
+		window.onload = function () {
 			let toggleTheme = function(event) {
 				if ($("#h_theme").attr('href') == 'dist/css/themes/prism.css') {
 					$("#h_theme").attr('href', 'dist/css/themes/prism-tomorrow.css');

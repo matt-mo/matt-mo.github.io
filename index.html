@@ -31,7 +31,7 @@
 	<script src="dist/js/jquery.visible.js" type="text/javascript"></script>
 	<script src="dist/js/clipboard.js" type="text/javascript"></script>
 	<script src="dist/js/prism.js" type="text/javascript"></script>
-	<script src="dist/js/site.js" type="text/javascript"></script>
+	<script src="dist/js/site.js" type="text/javascript"></script>	
 
 	<!-- Favicon
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -651,15 +651,16 @@
 			}
 			document.querySelectorAll('#t_heme_og')[0].addEventListener('click', toggleTheme, false);
 		};
+		/* activate pause for lightbulb video if scrolled out of viewport */
 		$(window).scroll(function() {
-			$('video').each(function() {
-				if ($(this).visible(true)) {
+			$('video').each(function(){
+				if ($(this).is(":in-viewport( 400 )")) {
 					$(this)[0].play();
 				} else {
 					$(this)[0].pause();
 				}
-			})
-		});
+			});
+    	});
 	</script>
 </footer>
 </html>

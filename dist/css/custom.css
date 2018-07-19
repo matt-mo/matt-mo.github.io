@@ -4,11 +4,6 @@
 	display: inline-block;
 	width: 60px;
 	height: 34px;
-	box-shadow: 3px 4px 6px  rgba(0,0,0,0.6);
-	-moz-box-shadow: 3px 4px 6px  rgba(0,0,0,0.6);
-	-webkit-box-shadow: 3px 4px 6px  rgba(0,0,0,0.6);
-	-o-box-shadow: 3px 4px 6px  rgba(0,0,0,0.6);
-	border-radius:25px;
   }
   
   .switch input {display:none;}
@@ -211,6 +206,13 @@
 		left: 0;
 		max-height: none;
 	}
+	.switch {
+		box-shadow: 3px 4px 6px  rgba(0,0,0,0.6);
+		-moz-box-shadow: 3px 4px 6px  rgba(0,0,0,0.6);
+		-webkit-box-shadow: 3px 4px 6px  rgba(0,0,0,0.6);
+		-o-box-shadow: 3px 4px 6px  rgba(0,0,0,0.6);
+		border-radius:25px;
+	  }
 }
 
 /* Larger than tablet */
